@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <title>Bhupendra Sharma</title>
+</head>
+<body onload="display_time()">
+    <nav>
+        <div class="logo">
+            <h5>Bhupendra Sharma</h5>
+        </div>
+
+        <ul class="nav-links">
+            <li>
+                <a href="#" onclick="display_home()">HOME</a>
+            </li>
+            <li>
+                <a href="#" onclick="display_education()">EDUCATION</a>
+            </li>
+            <li>
+                <a href="#" onclick="display_skills()">SKILLS & PROJECTS</a>
+            </li>
+            <li>
+                <a href="#" onclick="display_contact()">CONTACT</a>
+            </li>
+            
+        </ul>
+        
+        <div class="collapsed">
+            <a href="#" onclick="display_dropdown()" >
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+        </div>
+    </nav>
+    <div class="page">
+        <div id="dropdown" class="dropdown_class">
+            <ul>
+                <li>
+                    <a href="#" onclick="display_home()">HOME</a>
+                </li>
+                <li>
+                    <a href="#" onclick="display_education()">EDUCATION</a>
+                </li>
+                <li>
+                    <a href="#" onclick="display_skills()">SKILLS & PROJECTS</a>
+                </li>
+                <li>
+                    <a href="#" onclick="display_contact()">CONTACT</a>
+                </li>
+                
+            </ul>
+        </div>
+        <div id="home">
+            <div class="profileimg">
+                <img src="img/profile-img.jpg" alt="Profile Image">
+            </div>
+            <hr>
+            <div class="profilecontent">
+                <h1>Welcome to my portfolio!</h2>
+                <h2>I am Bhupendra Sharma.</h2>
+                <p class="ResumeButton"><a href="https://drive.google.com/file/d/10Xe10dH5n8u0KHpmLZvssjqiRYL8uxlC/view">Résumé</a></p>
+                <!-- <p>I am currently pursuing my M.Tech in Computer Science & Engineering from <a href="https://www.iiit.ac.in/">IIIT Hyderabad</a>.I have completed my B.Tech in Computer Science & Engineering from <a href="https://www.gla.ac.in/">GLA University, Mathura</a>.</p> -->
+            </div>
+        </div>
+        <div id="education">
+            <h1>Education</h1>
+            <hr>
+            <table>
+                <tr>
+                    <td><a href="https://www.iiit.ac.in/">IIIT Hyderabad</a></td>
+                    <td colspan="2">M.Tech in CSE</td>
+                </tr>
+                <tr>
+                    <td>Expected:May 2023</td>
+                    <td>Aug 2021 - Present</td>
+                    <td>Hyderabad,Telangana</td>
+                </tr>
+                <tr>
+                    <td colspan="3"><hr></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.gla.ac.in/">GLA University</a></td>
+                    <td colspan="2">B.Tech in CSE</td>
+                </tr>
+                <tr>
+                    <td>CGPA:8.03</td>
+                    <td>Aug 2015 - May 2019</td>
+                    <td>Mathura,Uttar Pradesh</td>
+                </tr>
+                <tr>
+                    <td colspan="3"><hr></td>
+                </tr>
+                <tr>
+                    <td>BSN Jhansi</td>
+                    <td colspan="2">Senior Secondary, CBSE</td>
+                </tr>
+                <tr>
+                    <td>Percentage:79.8</td>
+                    <td>Mar 2015</td>
+                    <td>Jhansi,Uttar Pradesh</td>
+                </tr>
+                <tr>
+                    <td colspan="3"><hr></td>
+                </tr>
+                <tr>
+                    <td>BSN Jhansi</td>
+                    <td colspan="2">Secondary, CBSE</td>
+                </tr>
+                <tr>
+                    <td>CGPA:8.6</td>
+                    <td>Mar 2015</td>
+                    <td>Jhansi,Uttar Pradesh</td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div id="skills">
+            <h1>Skills</h1>
+            <hr>
+            <table>
+                <tr>
+                    <td colspan="7" class="BoldText">Proficient</td>
+                </tr>
+                <tr>
+                    <td colspan="7"><hr></td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>&bull;</td>
+                    <td>C++</td>
+                    <td>&bull;</td>
+                    <td>Python</td>
+                    <td>&bull;</td>
+                    <td>SQL</td>
+                </tr>
+                <tr>
+                    <td colspan="7"><hr></td>
+                </tr>
+                <tr>
+                    <td colspan="7" class="BoldText">Familiar</td>
+                </tr>
+                <tr>
+                    <td colspan="7"><hr></td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>&bull;</td>
+                    <td>HTML,CSS,JS</td>
+                    <td>&bull;</td>
+                    <td>SHELL Scripting</td>
+                    <td>&bull;</td>
+                    <td>Git</td>
+                </tr>
+            </table>
+            <br><br>
+            <h1>Projects</h1>
+            <table>
+                <tr>
+                    <td colspan="2"><hr></td>
+                </tr>
+                <tr>
+                    <td class="BoldText">Handwritten Digit Recognition</td>
+                    <td>Jan -April 2018</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><hr></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Used Tensorflow to buid CNN and trained it using MNIST Dataset.Integrated it with tkinter which identifies digit
+                        drawn over interface window and predict result.</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><hr></td>
+                </tr>
+                <tr>
+                    <td class="BoldText">Bloodline</td>
+                    <td>Sep -Nov 2017</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><hr></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Created a Blood Donation Web-app using php and MySql that will notify a Acceptor via Email if any donor is available
+                        to donate.</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div id="contact">
+            <hr>
+            <h1>Contact</h1>
+            <table>
+                <tr>
+                    <td colspan="2"><hr></td>
+                </tr>
+                <tr>
+                    <td><img src="img/logo-gmail.png" alt="email"></td>
+                    <td><a href="mailto:sharmabs110@gmail.com">sharmabs110@gmail.com</a></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><hr></td>
+                </tr>
+                <tr>
+                    <td><img src="img/logo-linkedin.png" alt="linkedin" ></td>
+                    <td><a href="https://www.linkedin.com/in/bhupendra-sharma-24aaaa12a/">bhupendra-sharma-24aaaa12a</a></td>
+                </tr>
+            </table>
+            <br><br>  
+            <h2 style="font-weight: bold;">Send me a message!</h2>  
+            <hr>
+            <!-- <form action="sendEmail()" method="post"> -->
+                <table>
+                    <tr>
+                        <input type="text" name="Name" id="inp-name" placeholder="Enter your name" required>
+                    </tr>
+                    <tr>
+                        <br><br>
+                    </tr>
+                    <tr>
+                        <input type="text" name="Email" id="inp-email" placeholder="Enter your Email" required>
+                    </tr>
+                    <tr>
+                        <br><br>
+                    </tr>
+                    <tr>
+                        <textarea id="inp-textarea" name="TextArea" rows="10" cols="50" placeholder="Enter your message" required></textarea>
+                    </tr>
+                    <tr>
+                        <br>
+                    </tr>
+                    <tr>
+                        <input type="submit" value="Send" id="send" onclick="sendEmail();">
+                    </tr>
+                </table>
+            <!-- </form> -->
+        </div>
+    </div>
+    
+    <footer>
+        <a href="https://github.com/bhupendra-sharma"><img src="img/logo-github.png" alt="logo-github"></a>
+        <a href="https://www.linkedin.com/in/bhupendra-sharma-24aaaa12a/"><img src="img/logo-linkedin.png" alt="logo-linkedin"></a>
+        <p id="date"></p>
+    </footer>
+
+</body>
+
+<script src="script/script.js"></script>
+
+</html>
